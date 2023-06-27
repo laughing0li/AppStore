@@ -3,12 +3,11 @@
 
 ### Purpose
 
-** You can see what it looks like here: http://avre.auscope.org/store**
-
 This project is a simple App Store for AuScope
 
 ### How to initiate
-**Note** that this project requires npm >= 8.19.3 & nodejs >= 16.19.0
+
+**Note** that this project requires npm >= 9.5.1 & nodejs >= 18.16.0
 
 In order to get started:
 ```bash
@@ -32,3 +31,11 @@ $ npm start
 # This can be deployed to an Apache server or something similar. 
 $ ng build --prod
 ```
+
+### Configuration
+
+See [README](ui/src/assets/geomodels/README.md)
+
+### Building docker images
+
+There is a Dockerfile [here](ui/docker/Dockerfile)
