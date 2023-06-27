@@ -1,0 +1,14 @@
+@import "globals";
+
+.main-container {
+    margin-top: $header-height;
+    margin-left: 0;
+    max-height: calc(100vh - #{$header-height});
+    position: relative;
+    overflow: hidden;
+}
+@media screen and (max-width: 992px) {
+    .main-container {
+        margin-left: 0px !important;
+    }
+}

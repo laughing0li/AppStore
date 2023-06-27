@@ -1,0 +1,70 @@
+@import "../../globals";
+
+:host {
+    .navbar {
+        background-color: $topnav-background-color;
+        height: $header-height;
+        .navbar-brand {
+            color: #fff;
+        }
+        .nav-item > a {
+            color: #DDD;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+    .messages {
+        width: 300px;
+        .media {
+            border-bottom: 1px solid #ddd;
+            padding: 5px 10px;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+        .media-body {
+            h5 {
+                font-size: 13px;
+                font-weight: 600;
+            }
+            .small {
+                margin: 0;
+            }
+            .last {
+                font-size: 12px;
+                margin: 0;
+            }
+        }
+    }
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+#org-logo {
+    background-color: transparent;
+    width: 33px;
+    height: 33px;
+    border: none;
+}
+
+@media screen and (max-width: $small-screen-width) {
+    .navbar-brand, .navbar-nav {
+        font-size: 0.75rem;
+    }
+    .navbar-nav {
+        margin-left: 0 !important;
+    }
+    .nav-item {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    #org-logo {
+        width: 20px;
+        height: 20px;
+    }
+    .navbar-toggler {
+        padding: 4px;
+    }
+}

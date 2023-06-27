@@ -1,0 +1,15 @@
+<div *ngIf="providerModels[providerPath]" [@routerTransition]>
+    <h2 class="title-text">App Selection - {{this.providerModels[providerPath].name}}</h2>
+    <div class="row">
+        <div *ngFor="let model of providerModels[providerPath].models" class="col-xl-3 col-lg-6">
+            <app-model-card [label]="model.name" [bgClass]="model.colourClass" [icon]="model.icon"
+                            [modelSrcLink]="model.srcUrl" [modelInfoLink]="model.infoUrl" 
+                            [modelInfoMessage]="model.infoMessage"></app-model-card>
+        </div>
+    </div>
+</div>
+<div *ngIf="!providerModels[providerPath]">
+    <div class="d-flex justify-content-center align-items-center" style="height:100px;">
+        <div><span class="text-muted">Cannot find provider. <a href='/'>Return to home page</a></span></div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="card text-white bg-{{bgClass}}">
+    <div class="card-header">
+        <div class="row">
+            <div class="col col-sm-10 text-left">
+                <div class="d-block">{{label}}</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-sm-2"></div>
+            <div class="col col-sm-10 text-right">
+                <img class="thumb-img" src="assets/images/{{icon}}" alt="model-icon"/>
+            </div>
+        </div>
+        <div *ngIf="modelInfoLink!=''" class="row" (click)='openModelInfoLink()'>
+            <div class="col col-xs-6">
+                <span class="float-right info-link"><a>More Info&nbsp;</a><i class="fa fa-sm fa-external-link" aria-hidden="true"></i></span>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="modelInfoMessage && modelInfoMessage!=''" class="card-body" style="font-size: 0.7rem">
+        {{modelInfoMessage}}
+    </div>
+    <div class="card-footer d-flex justify-content-between" (click)='navigateToModel()'>
+        <span class="view-link">Launch</span>
+        <i class="fa fa-2x fa-arrow-circle-right" aria-hidden="true"></i>
+    </div>
+</div>

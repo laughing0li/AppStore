@@ -1,0 +1,155 @@
+{
+            "sam": {
+                "name": "Solid Earth",
+                "models": [
+                    {
+                        "name": "Underworld2 Training",
+                        "icon": "Underworld2.jpg",
+                        "colourClass": "sam",
+                        "srcUrl" : "https://github.com/underworldcode/underworld2",
+                        "infoUrl": "https://www.underworldcode.org",
+                        "infoMessage": "Underworld 2 is a python-friendly version of the Underworld code which provides a programmable and flexible front end to all the functionality of the code running in a parallel HPC environment."
+                    }
+                ],
+                "icon": "Icons_SAM.png",
+                "colourClass": "sam",
+                "infoUrl": "https://www.auscope.org.au/sam"
+            },
+            "igsn": {
+                "name": "IGSN",
+                "models": [
+                    {
+                        "name": "ARDC IGSN Minting Service",
+                        "icon": "IGSN-ARDC.jpg",
+                        "colourClass": "igsn",
+                        "srcUrl" : "http://www.auscope.org.au/igsn-info/",
+                        "infoUrl": "",
+                        "infoMessage": "This service enables users to mint and assign International Geo Sample Numbers (IGSN) identifiers. The IGSN is a resolvable identifier for physical samples from our natural environment and related sampling features associated with research."
+                    }
+                ],
+                "icon": "igsn-original.jpg",
+                "colourClass": "igsn",
+                "infoUrl": "https://www.igsn.org/"
+            },
+            "portal": {
+                "name": "AuScope Portal",
+                "models": [
+                    {
+                        "name": "AuScope Portal",
+                        "icon": "DiscoveryPortal2.jpg",
+                        "colourClass": "portal",
+                        "srcUrl" : "http://portal.auscope.org.au/",
+                        "infoUrl": "",
+                        "infoMessage": "A Web Based Interface for searching and accessing a vast treasure trove of data, information, imagery, services and applications."
+                    }
+                ],
+                "icon": "Icons_AVRE.png",
+                "colourClass": "portal",
+                "infoUrl": "https://www.auscope.org.au/avre"
+            },
+            "geochem": {
+                "name": "Geochemistry",
+                "models": [
+                    {
+                        "name": "AGN Laboratory Finder",
+                        "icon": "AGN-LabFinder.jpg",
+                        "colourClass": "geochem",
+                        "srcUrl" : "https://labfinder.geoanalytics.group/",
+                        "infoUrl": "",
+                        "infoMessage": "The AGN Laboratory Finder is designed to identify and understand the analysis techniques available to researchers through the Australian Geochemistry Network. You will find the contact details of our expert staff for each technique. They can provide you with all the information you need and guide you through the planning, training, data collection and interpretation stages of your experiments."
+                    },
+                    {
+                        "name": "AusGeoChem",
+                        "icon": "AusGeoChem.png",
+                        "colourClass": "geochem",
+                        "srcUrl" : "https://ausgeochem.auscope.org.au/",
+                        "infoUrl": "",
+                        "infoMessage": "AusGeoChem provides the geochemistry community with a bespoke tool to explore, upload, disseminate and extract geo-sample and geochemistry data in a global geospatial context"
+
+                    }
+                ],
+                "icon": "Icons_Earth Comp.png",
+                "colourClass": "geochem",
+                "infoUrl": "https://www.auscope.org.au/ausgeochem"
+            },
+            "seismic": {
+                "name": "Seismic",
+                "models": [
+                    {
+                        "name": "AusPass",
+                        "icon": "AVRE-AusPass.jpg",
+                        "colourClass": "seismic",
+                        "srcUrl" : "http://auspass.edu.au/",
+                        "infoUrl": "",
+                        "infoMessage": "AusPass is a service dedicated to the acquisition, management, and distribution of passive seismological data in Australia."
+                    },
+                    {
+                        "name": "SENSI",
+                        "icon": "SENSI_logo.jpg",
+                        "colourClass": "seismic",
+                        "srcUrl" : "http://sensi.geoanalytics.group/",
+                        "infoUrl": "",
+                        "infoMessage": "Seismic Network Design App for optimising seismic array design that is based on the analytical method called SENSI that has been developed by Tramelli et al. (2013), which is widely used around the world including the GipNet array deployed to monitor seismicity in the Gippsland region in Victoria, Australia."
+                    }
+                ],
+                "icon": "Icons_Earth Imaging.png",
+                "colourClass": "seismic",
+                "infoUrl": ""
+            },
+            "3dmodels": {
+                "name": "3d Geological Models",
+                "models": [
+                    {
+                        "name": "AuScope 3d Geological Model Portal",
+                        "icon": "3d-Geo-Models.jpg",
+                        "colourClass": "3dmodels",
+                        "srcUrl" : "http://geomodels.auscope.org.au/",
+                        "infoUrl": "",
+                        "infoMessage": "This website enables you to explore a wide range of geological models from all around Australia in 3D. The models are supported by links to other informative sources, namely AuScope Portal, Geoscience Australia, and the state and territory geological surveys' websites."
+                    }
+                ],
+                "icon": "Icons_AVRE.png",
+                "colourClass": "3dmodels",
+                "infoUrl": "https://www.auscope.org.au/avre"
+            },
+            "geophys": {
+                "name": "Geophysics",
+                "models": [
+                    {
+                        "name": "Virtual Geophysics Lab",
+                        "icon": "VGL2.jpg",
+                        "colourClass": "geophys",
+                        "srcUrl" : "https://vgl.auscope.org/",
+                        "infoUrl": "https://www.auscope.org.au/avre",
+                        "infoMessage": "The Virtual Geophysics Laboratory (VGL) is a scientific workflow portal that provides Geophysicists with access to an integrated environment that exploits eResearch tools and Cloud computing technology."
+                    },
+                    {
+                        "name": "Geophysics HPC",
+                        "icon": "MT-Training-NCI.jpg",
+                        "colourClass": "geophys",
+                        "srcUrl" : "https://opus.nci.org.au/x/bwC_Bg",
+                        "infoUrl": "https://nci.org.au/",
+                        "infoMessage": "The Geophysics community space contains documentation and tutorials on how to access geophysical datasets at NCI as well as the various processing and inversion tools available on NCI’s Virtual Desktop Infrastructure (VDI) and Gadi Supercomputer."
+                    }
+                ],
+                "icon": "NCI-logo.svg",
+                "colourClass": "geophys",
+                "infoUrl": "https://nci.org.au/"
+            },
+            "iearth": {
+                "name": "iEarth Geophysics & Seismology",
+                "models": [
+                    {
+                        "name": "iEarth Software",
+                        "icon": "iEarth-logo.png",
+                        "colourClass": "iearth",
+                        "srcUrl" : "http://www.iearth.edu.au/codes/",
+                        "infoUrl": "http://www.iearth.edu.au/",
+                        "infoMessage": "The AuScope inversion laboratory (2011-2014) (ilab) is a project to make advanced inference and data analysis software available to the geophysics community. Many of the codes have been developed specifically for iLab, with others contributed by the authors. Software provided here has been possible with development support from the AuScope-AGOS (2011-2014). The AuScope Inversion Laboratory is a component of the Australian Geophysical Observing system (AuScope-AGOS) funded through the Australian Federal Government’s Education Infrastructure Fund (EIF3)."
+                    }
+                ],
+                "icon": "iEarth-logo.png",
+                "colourClass": "iearth",
+                "infoUrl": "http://www.iearth.edu.au/"
+            }
+}

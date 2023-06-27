@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/scss/bootstrap";
+@import "spinner";
+@import "utils";
+@import "rtl";
+@import "responsive";
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+/* Card colours for each provider */
+.bg-sam {
+   background-color: #6d18d5!important;
+}
+.bg-igsn {
+   background-color: #ef801f!important;
+}
+.bg-portal {
+   background-color: #008800!important;
+}
+.bg-geochem {
+   background-color: #FF3300!important;
+}
+.bg-seismic {
+   background-color: #730073!important;
+}
+.bg-3dmodels {
+   background-color: #9f7800!important;
+}
+.bg-geophys {
+   background-color: #0b19e4!important;
+}
+.bg-iearth {
+   background-color: #95909b!important;
+}
+
