@@ -33,7 +33,7 @@ export class ProviderSelectionComponent {
                 label: 'Underworld2'
             },
             {
-                imagePath: 'assets/images/Otway.PNG',
+                imagePath: 'assets/images/Otway.png',
                 text: 'AuScope 3D Geomodels Portal',
                 label: 'Otway Basin Model'
             },
