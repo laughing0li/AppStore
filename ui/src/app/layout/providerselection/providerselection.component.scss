@@ -9,6 +9,15 @@ ngb-carousel div h3, p {
     font-weight: 900;
 }
 
+::ng-deep {
+    .carousel-control-prev-icon {
+        background-image: url('/assets/images/left-arrow.svg');
+    }
+    .carousel-control-next-icon {
+        background-image: url('/assets/images/right-arrow.svg');
+    }
+}
+
 hr {
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
@@ -30,4 +39,5 @@ div.container-fluid div.row  {
 
 .title-text {
     color: #282572;
+    margin-left: 0.7rem;
 }

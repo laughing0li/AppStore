@@ -2,9 +2,10 @@
     <div class="container-fluid">
             <ngb-carousel>
                 <ng-template ngbSlide *ngFor="let slider of sliders">
-                    <!-- <img class="img-fluid mx-auto d-block" [src]="slider.imagePath" alt="Application: {{slider.text}}}"> -->
                     <div>
-                        <img [src]="slider.imagePath" alt="Application: {{slider.text}}"/>
+                        <a href="{{slider.url}}" target="_blank">
+                            <img [src]="slider.imagePath" alt="Application: {{slider.text}}"/>
+                        </a>
                     </div>
                     <div class="carousel-caption">
                         <h3>{{slider.label}}</h3>
