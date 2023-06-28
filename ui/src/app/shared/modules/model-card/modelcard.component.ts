@@ -29,7 +29,7 @@ export class ModelCardComponent {
      * Navigates the browser to a new page to view the chosen model
      */
     public navigateToModel() {
-        window.location.assign(this.modelSrcLink);
+        window.open(this.modelSrcLink);
     }
 
     /** Open up a window to more information about the model
