@@ -33,9 +33,9 @@ export class ProviderSelectionComponent {
                 label: 'Underworld2'
             },
             {
-                imagePath: 'assets/images/Windimurra.PNG',
+                imagePath: 'assets/images/Otway.PNG',
                 text: 'AuScope 3D Geomodels Portal',
-                label: 'Windimurra Model'
+                label: 'Otway Basin Model'
             },
             {
                 imagePath: 'assets/images/iEarth-carousel.png',
