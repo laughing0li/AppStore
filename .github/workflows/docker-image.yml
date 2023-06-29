@@ -6,7 +6,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
+  IMAGE_NAME: ghcr.io/${{ github.repository }}/auscopeappstore
 
 jobs:  
   build:
@@ -24,7 +24,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
     - name: Build the Docker image
-      run: cd ui && docker build . --tag auscopeappstore:${{ steps.date.outputs.time }} --file docker/Dockerfile 
+      run: cd ui && docker build . --tag $IMAGE_NAME:${{ steps.date.outputs.time }} --file docker/Dockerfile 
 
     - name: Log in to the Container registry
       uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
@@ -32,11 +32,6 @@ jobs:
         registry: ${{ env.REGISTRY }}
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
-    - name: Build and push Docker image
-      uses: docker/build-push-action@v4.1.1
-      with:
-        context: ui
-        file: ui/docker/Dockerfile
-        push: true
-        tags: auscopeappstore:${{ steps.date.outputs.time }}
+    - name: Push image
+      run: docker push $IMAGE_NAME:${{ steps.date.outputs.time }}
   
