@@ -6,7 +6,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ghcr.io/${{ github.repository }}/auscopeappstore
+  IMAGE_NAME: ghcr.io/auscope/appstore/app
 
 jobs:  
   build:
