@@ -36,7 +36,7 @@ jobs:
       uses: docker/build-push-action@v4.1.1
       with:
         context: ui
-        file: docker/Dockerfile
+        file: ui/docker/Dockerfile
         push: true
         tags: auscopeappstore:${{ steps.date.outputs.time }}
   
