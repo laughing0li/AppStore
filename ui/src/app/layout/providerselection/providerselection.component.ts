@@ -18,12 +18,6 @@ export class ProviderSelectionComponent {
     constructor(private modelInfoService: ModelInfoService) {
         this.sliders.push(
             {
-                imagePath: 'assets/images/auspass-carousel.png',
-                text: 'Seismic',
-                label: 'AusPass Network',
-                url: 'http://auspass.edu.au/'
-            },
-            {
                 imagePath: 'assets/images/avre-carousel.png',
                 text: 'AuScope Portal',
                 label: 'AuScope Portal',

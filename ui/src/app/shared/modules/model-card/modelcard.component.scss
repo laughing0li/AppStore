@@ -1,23 +1,24 @@
-.fa-arrow-circle-right {
-    color: #FFFFFF;
-}
-.card.text-white {
-    margin: 15px;
-}
-.d-block {
-    font-size: 20px;
-}
 .thumb-img {
-    max-width: 200px; max-height: 200px;
+    max-width: 250px; max-height: 250px;
 }
 
-.info-link {
-    font-size: 12px;
-    cursor: pointer;
-}
 .view-link {
     font-size: 20px;
 }
-.card-footer {
-    cursor: pointer;
+
+.btn-light {
+    margin: 5px;
+    width: 10rem;
+    min-height: 50px;
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
+    background-color: transparent;
+    border-color: #ed5d4a;
+    color: #ed5d4a;
+    margin-top: 20px;
+}
+.btn-light:hover {
+    background-color: #ed5d4a;
+    color: rgb(242, 242, 241);
 }

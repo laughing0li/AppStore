@@ -6,29 +6,53 @@
 @import "responsive";
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 
-/* Card colours for each provider */
-.bg-sam {
-   background-color: #6d18d5!important;
-}
-.bg-igsn {
-   background-color: #ef801f!important;
-}
-.bg-portal {
-   background-color: #008800!important;
-}
-.bg-geochem {
-   background-color: #FF3300!important;
-}
-.bg-seismic {
-   background-color: #730073!important;
-}
-.bg-3dmodels {
-   background-color: #9f7800!important;
-}
-.bg-geophys {
-   background-color: #0b19e4!important;
-}
-.bg-iearth {
-   background-color: #95909b!important;
+/* Card colour */
+.bg-all {
+   background-color: rgb(242, 242, 241);
 }
 
+/* Page colour */
+.main-container {
+   background-color: rgb(242, 242, 241);
+   padding: 0px;
+}
+
+app-provider-card {
+   margin: 10px;
+}
+
+/* Card title styling */
+.info-txt {
+   color: rgb(126, 124, 170);
+   font-family: Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 15px;
+   font-style: normal;
+   font-weight: 400;
+   min-height: 110px;
+ }
+
+/* Card info styling */
+ .info-title {
+   font-size: 21px;
+   color: rgb(35, 31, 32);
+   font-weight: 100;
+   font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Title styling for a page */
+.title-text {
+   color: #282572;
+   margin-left: 0.7rem;
+   font-family: Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 34px;
+ }
+
+ /* Information link on card*/
+ .info-link {
+   font-size: 17px;
+   cursor: pointer;
+   color: rgb(126, 124, 170);
+   font-family: Calibri, 'Trebuchet MS', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+}

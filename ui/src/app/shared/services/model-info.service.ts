@@ -16,6 +16,7 @@ export interface ProviderInfo {
     colourClass: string;
     providerPath: string;
     infoUrl: string;
+    infoMessage: string;
 }
 
 export const FIXED_HEIGHT = -1.0;
@@ -100,7 +101,8 @@ export class ModelInfoService {
                                                                  icon: local.providerModelInfo[providerKey].icon,
                                                                  colourClass: local.providerModelInfo[providerKey].colourClass,
                                                                  providerPath: providerKey,
-                                                                 infoUrl: local.providerModelInfo[providerKey].infoUrl
+                                                                 infoUrl: local.providerModelInfo[providerKey].infoUrl,
+                                                                 infoMessage: local.providerModelInfo[providerKey].infoMessage
                                                              };
                                 local.providerInfoList.push(providerInfo);
                             }

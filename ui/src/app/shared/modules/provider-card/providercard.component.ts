@@ -19,6 +19,7 @@ export class ProviderCardComponent {
     @Input() providerPath: string;
     @Input() prePath = '';
     @Input() infoLink = '';
+    @Input() pInfoMessage: string;
 
     constructor() {
         // If this website sits in a subdirectory of web server's 'document root' directory
@@ -44,8 +45,4 @@ export class ProviderCardComponent {
     public openInfoLink() {
         window.open(this.infoLink);
     }
-
-    /**
-     * Go to model
-     */
 }

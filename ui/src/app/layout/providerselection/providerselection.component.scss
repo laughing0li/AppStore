@@ -1,9 +1,75 @@
+// Adjusting carousel to screen width
+
 ngb-carousel img {
-    margin-left: 20%;
-    width: 60%;
-    height: 400px;
+    margin-left: 0%;
+    width: 100%;
+    height: 250px;
+  }
+.card-border {
+    border-bottom: grey 1px solid;
 }
 
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  ngb-carousel img {
+    margin-left: 0%;
+    width: 100%;
+    height: 250px;
+  }
+  .card-border {
+    border-bottom: grey 1px solid;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    ngb-carousel img {
+        margin-left: 5%;
+        width: 90%;
+        height: 270px;
+    }
+    .card-border {
+        border-bottom: grey 1px solid;
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  ngb-carousel img {
+    margin-left: 10%;
+    width: 80%;
+    height: 290px;
+  }
+  .card-border {
+    border-bottom: none;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    ngb-carousel img {
+    margin-left: 15%;
+    width: 70%;
+    height: 300px;
+  }
+  .card-border {
+    border-bottom: none;
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  ngb-carousel img {
+    margin-left: 20%;
+    width: 60%;
+    height: 300px;
+  }
+  .card-border {
+    border-bottom: none;
+  } 
+}
+
+// Text colour & font in carousel
 ngb-carousel div h3, p {
     color: rgb(126, 217, 6);
     font-weight: 900;
@@ -19,23 +85,14 @@ ngb-carousel div h3, p {
 }
 
 hr {
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 h2 {
     margin-bottom: 0rem;
 }
 
-/*img.d-block {
-    max-height: calc(0.35 * calc(100vh - 102px));
-
-}
-
-div.container-fluid div.row  {
-    max-height: calc(0.65 * calc(100vh - 102px));
-    overflow-y: auto
-}*/
 
 .title-text {
     color: #282572;

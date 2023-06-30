@@ -1,19 +1,21 @@
-.fa-arrow-circle-right {
-    color: #FFFFFF;
-}
-.card.text-white {
+.btn-light {
     margin: 5px;
+    width: 10rem;
+    min-height: 50px;
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
+    background-color: transparent;
+    border-color: #ed5d4a;
+    color: #ed5d4a;
+    margin-top: 20px;
 }
-.d-block {
-    font-size: 14px;
+.btn-light:hover {
+    background-color: #ed5d4a;
+    color: rgb(242, 242, 241);
 }
+
+
 .icon-img {
     max-width: 60px; max-height: 60px;
-}
-.info-link {
-    font-size: 12px;
-    cursor: pointer;
-}
-.card-footer {
-    cursor: pointer;
 }
