@@ -94,6 +94,14 @@
                         "srcUrl" : "http://sensi.geoanalytics.group/",
                         "infoUrl": "",
                         "infoMessage": "Seismic Network Design App for optimising seismic array design that is based on the analytical method called SENSI that has been developed by Tramelli et al. (2013), which is widely used around the world including the GipNet array deployed to monitor seismicity in the Gippsland region in Victoria, Australia."
+                    },
+                    {
+                        "name": "iEarth Software",
+                        "icon": "iEarth-logo.png",
+                        "colourClass": "all",
+                        "srcUrl" : "http://www.iearth.edu.au/codes/",
+                        "infoUrl": "http://www.iearth.edu.au/",
+                        "infoMessage": "The AuScope inversion laboratory (2011-2014) (ilab) is a project to make advanced inference and data analysis software available to the geophysics community. Many of the codes have been developed specifically for iLab, with others contributed by the authors. Software provided here has been possible with development support from the AuScope-AGOS (2011-2014). The AuScope Inversion Laboratory is a component of the Australian Geophysical Observing system (AuScope-AGOS) funded through the Australian Federal Government’s Education Infrastructure Fund (EIF3)."
                     }
                 ],
                 "icon": "Icons_Earth Imaging.png",
@@ -136,16 +144,7 @@
                         "srcUrl" : "https://opus.nci.org.au/x/bwC_Bg",
                         "infoUrl": "https://nci.org.au/",
                         "infoMessage": "The Geophysics community space contains documentation and tutorials on how to access geophysical datasets at NCI as well as the various processing and inversion tools available on NCI’s Virtual Desktop Infrastructure (VDI) and Gadi Supercomputer."
-                    }
-                ],
-                "icon": "NCI-logo.svg",
-                "colourClass": "all",
-                "infoUrl": "https://nci.org.au/",
-                "infoMessage": "Geophysics applications from AuScope AVRE, NCI and the geophysics community"
-            },
-            "iearth": {
-                "name": "Geophysics & Seismology",
-                "models": [
+                    },
                     {
                         "name": "iEarth Software",
                         "icon": "iEarth-logo.png",
@@ -155,9 +154,9 @@
                         "infoMessage": "The AuScope inversion laboratory (2011-2014) (ilab) is a project to make advanced inference and data analysis software available to the geophysics community. Many of the codes have been developed specifically for iLab, with others contributed by the authors. Software provided here has been possible with development support from the AuScope-AGOS (2011-2014). The AuScope Inversion Laboratory is a component of the Australian Geophysical Observing system (AuScope-AGOS) funded through the Australian Federal Government’s Education Infrastructure Fund (EIF3)."
                     }
                 ],
-                "icon": "iEarth-logo.png",
+                "icon": "NCI-logo.svg",
                 "colourClass": "all",
-                "infoUrl": "http://www.iearth.edu.au/",
-                "infoMessage": "Geophysics & Seismology applcations from the iEarth communiry"
+                "infoUrl": "https://nci.org.au/",
+                "infoMessage": "Geophysics applications from AuScope AVRE, NCI and the geophysics community"
             }
 }
