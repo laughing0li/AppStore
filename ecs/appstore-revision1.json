@@ -4,8 +4,8 @@
         {
             "name": "appstore",
             "image": "953843825308.dkr.ecr.ap-southeast-2.amazonaws.com/appstore",
-            "cpu": 0,
-            "memory": 500,
+            "cpu": 1024,
+            "memory": 1024,
             "portMappings": [
                 {
                     "containerPort": 80,
@@ -22,7 +22,7 @@
         }
     ],
     "family": "appstore",
-    "revision": 10,
+    "revision": 12,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
