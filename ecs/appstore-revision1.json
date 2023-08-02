@@ -22,7 +22,7 @@
         }
     ],
     "family": "appstore",
-    "revision": 1,
+    "revision": 10,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
