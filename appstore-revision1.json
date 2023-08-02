@@ -1,0 +1,46 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:ap-southeast-2:953843825308:task-definition/appstore:1",
+    "containerDefinitions": [
+        {
+            "name": "appstore",
+            "image": "953843825308.dkr.ecr.ap-southeast-2.amazonaws.com/appstore",
+            "cpu": 0,
+            "memory": 500,
+            "portMappings": [
+                {
+                    "containerPort": 80,
+                    "hostPort": 80,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "entryPoint": [],
+            "command": [],
+            "environment": [],
+            "mountPoints": [],
+            "volumesFrom": []
+        }
+    ],
+    "family": "appstore",
+    "revision": 1,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EXTERNAL",
+        "EC2"
+    ],
+    "requiresCompatibilities": [
+        "EC2"
+    ],
+    "cpu": "1024",
+    "memory": "1024",
+    "registeredAt": "2023-08-02T06:24:53.357Z",
+    "registeredBy": "arn:aws:iam::953843825308:root",
+    "tags": []
+}
