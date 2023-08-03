@@ -72,7 +72,7 @@ jobs:
         aws ecs stop-task --cluster ${{ env.ECS_CLUSTER }} --task $task_id
         aws ecs deregister-task-definition --task-definition $task_id
     
-        - name: Deploy Amazon ECS task definition
+    - name: Deploy Amazon ECS task definition
       uses: aws-actions/amazon-ecs-deploy-task-definition@df9643053eda01f169e64a0e60233aacca83799a
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
