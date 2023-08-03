@@ -65,5 +65,5 @@ jobs:
         cluster: ${{ env.ECS_CLUSTER }}
         # wait-for-service-stability: true
     - name: Update ECS service with new task definition
-    run: |
-      aws ecs update-service --cluster ${{ env.ECS_CLUSTER }} --service ${{ env.ECS_SERVICE }} --task-definition ${{ steps.task-def.outputs.task-definition }}
+      run: |
+        aws ecs update-service --cluster ${{ env.ECS_CLUSTER }} --service ${{ env.ECS_SERVICE }} --task-definition ${{ steps.task-def.outputs.task-definition }}
