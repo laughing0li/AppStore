@@ -57,21 +57,6 @@ jobs:
         container-name: ${{ env.CONTAINER_NAME }}
         image: ${{ steps.build-image.outputs.image }}
 
-    - name: Get current ECS task definition
-      id: get-current-task-def
-      run: |
-        task_def=$(aws ecs describe-services --cluster ${{ env.ECS_CLUSTER }} --services ${{ env.ECS_SERVICE }} --query 'services[0].taskDefinition')
-        echo "::set-output name=task-definition::$task_def"
-
-    - name: Stop and deregister existing task in ECS service
-      if: steps.get-current-task-def.outputs.task-definition != ''
-      run: |
-        task_id=$(aws ecs describe-services --cluster ${{ env.ECS_CLUSTER }} --services ${{ env.ECS_SERVICE }} --query 'services[0].deployments[0].taskDefinition')
-        task_id=$(echo $task_id | tr -d '"')
-        echo "Stopping task: $task_id"
-        aws ecs stop-task --cluster ${{ env.ECS_CLUSTER }} --task $task_id
-        aws ecs deregister-task-definition --task-definition $task_id
-    
     - name: Deploy Amazon ECS task definition
       uses: aws-actions/amazon-ecs-deploy-task-definition@df9643053eda01f169e64a0e60233aacca83799a
       with:
