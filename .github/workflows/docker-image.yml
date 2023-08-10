@@ -1,7 +1,6 @@
 name: Docker Image CI
 
 on:
-  # Manually triggered
   push:
     branches:
       - main
@@ -9,8 +8,8 @@ env:
 
   AWS_REGION: ap-southeast-2 # set this to your preferred AWS region, e.g. us-west-1
   ECR_REPOSITORY: appstore # set this to your Amazon ECR repository name
-  ECS_SERVICE: demo # set this to your Amazon ECS service name
-  ECS_CLUSTER: avre # set this to your Amazon ECS cluster name
+  ECS_SERVICE: avre_appstore # set this to your Amazon ECS service name
+  ECS_CLUSTER: AppStoreCluster # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: ./ecs/appstore-revision1.json # set this to the path to your Amazon ECS task definition
     # file, e.g. .aws/task-definition.json
   CONTAINER_NAME: appstore # set this to the name of the container in the
@@ -25,12 +24,19 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
+    # - name: Configure AWS credentials
+    #   uses: aws-actions/configure-aws-credentials@0e613a0980cbf65ed5b322eb7a1e075d28913a83
+    #   with:
+    #     aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+    #     aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    #     aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
+    #     aws-region: ${{ env.AWS_REGION }}
     - name: Configure AWS credentials
-      uses: aws-actions/configure-aws-credentials@0e613a0980cbf65ed5b322eb7a1e075d28913a83
+      uses: aws-actions/configure-aws-credentials@v2
       with:
-        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ env.AWS_REGION }}
+        role-to-assume: ${{ secrets.ROLE_TO_ASSUME }}
+        role-session-name: GitHubActions
 
     - name: Login to Amazon ECR
       id: login-ecr

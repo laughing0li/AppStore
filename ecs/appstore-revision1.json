@@ -1,29 +1,29 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-southeast-2:953843825308:task-definition/test:1",
+    "taskDefinitionArn": "arn:aws:ecs:ap-southeast-2:031829351952:task-definition/appstore:9",
     "containerDefinitions": [
         {
             "name": "appstore",
-            "image": "953843825308.dkr.ecr.ap-southeast-2.amazonaws.com/appstore",
+            "image": "031829351952.dkr.ecr.ap-southeast-2.amazonaws.com/appstore",
             "cpu": 0,
-            "memory": 500,
+            "memory": 512,
             "portMappings": [
                 {
+                    "name": "appstore-80-tcp",
                     "containerPort": 80,
                     "hostPort": 80,
-                    "protocol": "tcp"
+                    "protocol": "tcp",
+                    "appProtocol": "http"
                 }
             ],
             "essential": true,
-            "entryPoint": [],
-            "command": [],
             "environment": [],
             "mountPoints": [],
             "volumesFrom": []
         }
     ],
-    "family": "test",
+    "family": "appstore",
     "networkMode": "bridge",
-    "revision": 1,
+    "revision": 9,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -33,7 +33,6 @@
     ],
     "placementConstraints": [],
     "compatibilities": [
-        "EXTERNAL",
         "EC2"
     ],
     "requiresCompatibilities": [
@@ -41,7 +40,11 @@
     ],
     "cpu": "512",
     "memory": "1024",
-    "registeredAt": "2023-08-03T05:10:46.114Z",
-    "registeredBy": "arn:aws:iam::953843825308:root",
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
+    "registeredAt": "2023-08-09T12:40:29.409Z",
+    "registeredBy": "arn:aws:sts::031829351952:assumed-role/AWSReservedSSO_PowerUserAccess_64998c6d6a9aa7eb/li300@csiro.au",
     "tags": []
 }
