@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-southeast-2:031829351952:task-definition/appstore:9",
+    "taskDefinitionArn": "arn:aws:ecs:ap-southeast-2:953843825308:task-definition/appstore:24",
     "containerDefinitions": [
         {
             "name": "appstore",
-            "image": "031829351952.dkr.ecr.ap-southeast-2.amazonaws.com/appstore",
+            "image": "953843825308.dkr.ecr.ap-southeast-2.amazonaws.com/appstore",
             "cpu": 0,
             "memory": 512,
             "portMappings": [
@@ -17,18 +17,53 @@
             ],
             "essential": true,
             "environment": [],
+            "environmentFiles": [],
             "mountPoints": [],
-            "volumesFrom": []
+            "volumesFrom": [],
+            "ulimits": [],
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-create-group": "true",
+                    "awslogs-group": "/ecs/appstore",
+                    "awslogs-region": "ap-southeast-2",
+                    "awslogs-stream-prefix": "ecs"
+                },
+                "secretOptions": []
+            }
         }
     ],
     "family": "appstore",
+    "taskRoleArn": "arn:aws:iam::953843825308:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::953843825308:role/ecsTaskExecutionRole",
     "networkMode": "bridge",
-    "revision": 9,
+    "revision": 24,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
         {
+            "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+        },
+        {
+            "name": "ecs.capability.execution-role-awslogs"
+        },
+        {
             "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.29"
         }
     ],
     "placementConstraints": [],
@@ -44,7 +79,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-08-09T12:40:29.409Z",
-    "registeredBy": "arn:aws:sts::031829351952:assumed-role/AWSReservedSSO_PowerUserAccess_64998c6d6a9aa7eb/li300@csiro.au",
+    "registeredAt": "2023-08-17T02:14:27.435Z",
+    "registeredBy": "arn:aws:iam::953843825308:root",
     "tags": []
 }
