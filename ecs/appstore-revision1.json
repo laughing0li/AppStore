@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-southeast-2:953843825308:task-definition/appstore:24",
+    "taskDefinitionArn": "arn:aws:ecs:ap-southeast-2:953843825308:task-definition/appstore:26",
     "containerDefinitions": [
         {
             "name": "appstore",
@@ -20,50 +20,24 @@
             "environmentFiles": [],
             "mountPoints": [],
             "volumesFrom": [],
-            "ulimits": [],
-            "logConfiguration": {
-                "logDriver": "awslogs",
-                "options": {
-                    "awslogs-create-group": "true",
-                    "awslogs-group": "/ecs/appstore",
-                    "awslogs-region": "ap-southeast-2",
-                    "awslogs-stream-prefix": "ecs"
-                },
-                "secretOptions": []
-            }
+            "ulimits": []
         }
     ],
     "family": "appstore",
-    "taskRoleArn": "arn:aws:iam::953843825308:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::953843825308:role/ecsTaskExecutionRole",
     "networkMode": "bridge",
-    "revision": 24,
+    "revision": 26,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
         {
-            "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
-        },
-        {
-            "name": "ecs.capability.execution-role-awslogs"
-        },
-        {
             "name": "com.amazonaws.ecs.capability.ecr-auth"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.task-iam-role"
         },
         {
             "name": "ecs.capability.execution-role-ecr-pull"
         },
         {
             "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.29"
         }
     ],
     "placementConstraints": [],
@@ -79,7 +53,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-08-17T02:14:27.435Z",
+    "registeredAt": "2023-08-17T04:39:29.414Z",
     "registeredBy": "arn:aws:iam::953843825308:root",
     "tags": []
 }
